@@ -1,2 +1,13 @@
-# jasperreports_import_reports
-Скрипт для автоматического импорта шаблонов отчётов на Jasperreports Server
+# Jasperreports автоматический импорт отчётов
+
+Этот скрипт - обёртка над скриптом `/opt/jasper/buildomatic/js-import.sh`, он позволяет ипортировать на Jasperreports сервер сразу много архивов с экспортированными отчётами, и записывает логи в папку `log`
+
+Использование:
+
+```bash
+# По умолчаниюархивым берутся из папки JR_templates
+sh jrs_import_reports.sh
+
+# Опционально, папку с архивами можно указать в качесте параметра:
+sh jrs_import_reports.sh JR_templates
+```
